@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #F7F7F8;
+  justify-content: center; 
+  align-items: center;
+  display: grid;
+  margin-top: 100px;
+  padding: 10px;
+ 
+}
+header {
+ padding: 15px 25px;
+ background-color: rgb(255, 255, 255);
+ margin-bottom: 20px;
+
+}
+.title h1{
+font-size: 40px;
+text-align: center;
+}
+h4{
+  color: #6B7280;
+  text-align: center;
+}
+.body-content{
+  width: 400px;
+}
+.user-profile{
+  background-color: #59c6e4;
+padding: 10px;
+display: flex;
+justify-content:space-around;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+img{
+ mix-blend-mode: multiply;
+ width: 80px;
+}
+.tasks{
+ 
+  /* border: red 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content:space-between;
+  overflow: hidden;
+  margin-bottom: 20px; */
+ 
+}
+.task-inputs{
+  border: rgb(255, 255, 255) 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content:space-between;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px;
+  
+}
+.task-details{
+  border: none ;
+  outline: none;
+  padding: 10px; 
+  padding-left: 20px;
+  width: 100%;
+}
+.task-button{
+  
+  border: none ;
+  outline: none;
+  padding: 10px; 
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #59c6e4;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.add-task{
+   border: red 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content:space-between;
+  overflow: hidden;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.add-list li{
+  margin: 0;
+  padding-left: 10px;
+
+  
+}
+.cs-delete-button button{
+ border-radius: 5px;
+  border: none ;
+  outline: none;
+  padding: 10px; 
+  padding-right: 27px;
+  padding-left: 27px;
+  background-color: #59c6e4;
+  cursor: pointer;
+}
+#task-item li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  position: relative;
+  border: 2px solid rgb(255, 255, 255);
+}
+#task-item li .checkbox{
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid rgba(5, 5, 5, 0.7);
+  background-color:white;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 20px;
+}
+#task-item li .checkbox:checked{
+background-color: #ffffff;
+transform: scale(1.1)
+}
+#task-item li .checkbox:checked::before{
+  content:   '\2713';
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 1rem;
+  
+}
+#task-item li span{
+  flex: 1;
+  word-break: break-word;
+}
+.edit-button{
+  margin-right:  10px;
+ 
+}
+.task-process{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  gap: 20px;
+}
+.details {
+  width: 100%;
+} 
+.progressbar{
+  width: 100%;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  position: relative;
+  margin-top: 15px;
+}
+.progress{
+  width: 0%;
+  height: 100%;
+  background-color:crimson;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 1.5rem;
+ 
+}
