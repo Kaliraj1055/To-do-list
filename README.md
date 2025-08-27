@@ -29,7 +29,7 @@ Helps you stay productive, track tasks, and manage your day effectively.
 
 ## 📸 Screenshots
 
-![App Screenshot](images/Appimage1.png,images/Appimage2.png,images/Appimage3.jpg,images/Appimage4.jpg)  
+![App Screenshot](images/Appimage4.jpg)  
 
 
 ---
