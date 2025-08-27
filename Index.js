@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const userIntro = document.querySelector('.user-intro');
     let userName = localStorage.getItem('userName') || prompt("Enter Your Name");
+
     if (!userName) {
         userIntro.innerHTML = `Welcome`;
     } else {
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressNumber = document.querySelector('.number');
     const progressBar = document.querySelector('.progress');
 
-   
     const safeParse = (data) => {
         try {
             const parsed = JSON.parse(data);
@@ -51,30 +51,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 <input type="checkbox" class="checkbox" ${task.completed ? 'checked' : ''}>
                 <span>${task.text}</span>
                 <div class="cs-delete-button"><button class="edit-button">Edit</button></div>
-                <div class="cs-delete-button"><button class="delete-button" id="deleteButton">Delete</button></div>
+                <div class="cs-delete-button"><button class="delete-button">Delete</button></div>
             `;
 
             const editBtn = li.querySelector('.edit-button');
             const checkbox = li.querySelector('.checkbox');
             const textEl = li.querySelector('span');
 
-          
+           
             if (task.completed) {
                 textEl.style.textDecoration = 'line-through';
                 textEl.style.textDecorationThickness = '2px';
-                textEl.style.textDecorationColor = '#000000ff';
-                textEl.style.color = '#868686ff';
+                textEl.style.textDecorationColor = '#000';
+                textEl.style.color = '#868686';
                 editBtn.disabled = true;
             }
 
-            
             checkbox.addEventListener('change', (e) => {
                 tasks[index].completed = e.target.checked;
                 if (e.target.checked) {
                     textEl.style.textDecoration = 'line-through';
                     textEl.style.textDecorationThickness = '2px';
-                    textEl.style.textDecorationColor = '#000000ff';
-                    textEl.style.color = '#868686ff';
+                    textEl.style.textDecorationColor = '#000';
+                    textEl.style.color = '#868686';
                     editBtn.disabled = true;
                 } else {
                     textEl.style.textDecoration = 'none';
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateProgress();
             });
 
-            
+          
             editBtn.addEventListener('click', () => {
                 taskInput.value = task.text;
                 tasks.splice(index, 1);
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateProgress();
             });
 
-            
+           
             li.querySelector('.delete-button').addEventListener('click', () => {
                 tasks.splice(index, 1);
                 saveTasks();
@@ -128,6 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
+
     renderTasks();
 });
