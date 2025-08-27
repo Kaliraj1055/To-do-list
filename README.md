@@ -47,3 +47,20 @@ Helps you stay productive, track tasks, and manage your day effectively.
 Clone the repository:
 ```bash
 git clone https://github.com/Kaliraj1055/To-do-list.git
+````
+---
+
+## Future Improvements
+
+* Dark mode toggle
+* Task categories & filters
+* Drag-and-drop task reordering
+* Due dates & reminders
+
+---
+
+## Author
+
+Built with ❤️ by [Kaliraj1055](https://github.com/Kaliraj1055)
+
+---
